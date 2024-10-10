@@ -13,7 +13,7 @@ export default function SignIn() {
           {/* Section header */}
           <div className="pb-12 text-center">
             <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              Welcome back
+              歡迎回來
             </h1>
           </div>
           {/* Contact form */}
@@ -24,13 +24,13 @@ export default function SignIn() {
                   className="mb-1 block text-sm font-medium text-indigo-200/65"
                   htmlFor="email"
                 >
-                  Email
+                  電子信箱
                 </label>
                 <input
                   id="email"
                   type="email"
                   className="form-input w-full"
-                  placeholder="Your email"
+                  placeholder="輸入您的信箱"
                 />
               </div>
               <div>
@@ -39,40 +39,40 @@ export default function SignIn() {
                     className="block text-sm font-medium text-indigo-200/65"
                     htmlFor="password"
                   >
-                    Password
+                    密碼
                   </label>
                   <Link
                     className="text-sm text-gray-600 hover:underline"
                     href="/reset-password"
                   >
-                    Forgot?
+                    忘記密碼?
                   </Link>
                 </div>
                 <input
                   id="password"
                   type="password"
                   className="form-input w-full"
-                  placeholder="Your password"
+                  placeholder="輸入您的密碼"
                 />
               </div>
             </div>
             <div className="mt-6 space-y-5">
               <button className="btn w-full bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]">
-                Sign in
+                登入
               </button>
               <div className="flex items-center gap-3 text-center text-sm italic text-gray-600 before:h-px before:flex-1 before:bg-gradient-to-r before:from-transparent before:via-gray-400/25 after:h-px after:flex-1 after:bg-gradient-to-r after:from-transparent after:via-gray-400/25">
-                or
+                或
               </div>
               <button className="btn relative w-full bg-gradient-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%]">
-                Sign In with Google
+                使用 Google 帳號登入
               </button>
             </div>
           </form>
           {/* Bottom link */}
           <div className="mt-6 text-center text-sm text-indigo-200/65">
-            Don't you have an account?{" "}
+            沒有帳號嗎？{" "}
             <Link className="font-medium text-indigo-500" href="/signup">
-              Sign Up
+              註冊
             </Link>
           </div>
         </div>
