@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface Trader {
   id: number;
@@ -55,7 +56,9 @@ const TraderPerformancePage: React.FC = () => {
                           {index + 1}
                         </td>
                         <td className="p-5 whitespace-nowrap text-sm text-gray-300">
+                        <Link href={`/trader/${trader.id}`}>
                           {trader.name}
+                        </Link>
                         </td>
                         <td className="p-5 text-center whitespace-nowrap text-sm text-gray-300">
                           {trader.winRate}%
